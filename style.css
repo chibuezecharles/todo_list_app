@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+
+.heading_comtainer{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.input_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+#user_input{
+    width: 30%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: grey;
+}
+
+#user_input::placeholder{
+    color: black;
+    font-size: 15px;
+}
+
+.details_container{
+     /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+.details{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0 5px 0;
+    width: 100%;
+}
+
+.add, .delete{
+     padding: 8px 20px;
+     border-radius: 10px;
+     border: none;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    font-size: 25px;
+}
+
+.delete{
+    color: red;
+}
+
+
+.details_text{
+    /* border: 1px solid red; */
+    width: 40%;
+    padding: 15px 10px;
+}
+
+
+@media screen and (max-width:800px) {
+    #user_input{
+        width: 60%;
+    }
+
+    .details_text{
+        width: 60%;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+    main{
+        padding: 15px;
+    }
+    
+    #user_input{
+        width: 100%;
+    }
+
+    .details_text{
+        width: 100%;
+    }
+
+}
